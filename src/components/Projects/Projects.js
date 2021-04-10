@@ -7,6 +7,7 @@ import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import crypto from "../../Assets/Projects/crypto.png";
+import blog from "../../Assets/Projects/blog.png";
 import currency from "../../Assets/Projects/currency.png";
 import hosting from "../../Assets/Projects/hosting.png";
 import netflix from "../../Assets/Projects/netflix.png";
@@ -34,6 +35,16 @@ function Projects() {
               title="Crypto Currency prices and statistics"
               description="A React app built for tracking the real-time prices and data relating to bitcoins. This app is possible due to crypto API."
               link="https://yourcryptoprice.netlify.app"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={blog}
+              isBlog={false}
+              title="Latest News with GNews API and google OAuth"
+              description="A News Website built with React, Redux, GNews API and Google OAuth, that show latest news from all across the internet."
+              link="https://blogboox.netlify.app/"
             />
           </Col>
 
@@ -69,6 +80,16 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={pizza}
+              isBlog={false}
+              title="Pizza Website"
+              description="A single page website for a pizza shop built with React.js."
+              link="https://getpizzaa.netlify.app"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={currency}
               isBlog={false}
               title="Currency Converter"
@@ -97,15 +118,7 @@ function Projects() {
             />
           </Col>
 
-            <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={pizza}
-              isBlog={false}
-              title="Pizza Website"
-              description="A single page website for a pizza shop built with React.js."
-              link="https://getpizzaa.netlify.app"
-            />
-          </Col>
+
         </Row>
       </Container>
     </Container>
