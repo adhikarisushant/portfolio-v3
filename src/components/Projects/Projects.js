@@ -15,6 +15,7 @@ import nike from "../../Assets/Projects/nike.png";
 import pizza from "../../Assets/Projects/pizza.png";
 import restaurant from "../../Assets/Projects/restaurant.png";
 import profile from "../../Assets/Projects/profile.png";
+import chat from "../../Assets/Projects/chat.png";
 
 function Projects() {
   return (
@@ -45,6 +46,16 @@ function Projects() {
               title="Latest News with GNews API and google OAuth"
               description="A News Website built with React, Redux, GNews API and Google OAuth, that show latest news from all across the internet."
               link="https://blogboox.netlify.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chat}
+              isBlog={false}
+              title="Group Chat Application"
+              description="A Group Messaging application (slack clone) built with React, Redux, Firebase and styled-components."
+              link="https://slack-clone-s.web.app/"
             />
           </Col>
 
